@@ -1,0 +1,84 @@
+sooo buddy i think once again give you all about our app okey check my sayings understand and rewrite to youe memory and if i miss anything say that 
+
+BIN BEACON is our app name okey we building this app to act as bridge between resident -garbage collector - municipality authorities
+lets fix our main theme as collect connect correct 
+
+okey  now let tell me each and everything what will happen 
+at first intro if need if you can do it icon an that all stufs you even creaate for your wish then home page in this there should be three dashboards resident , garbage collector , municipal authorities okey in this top there should be icon for language if click the languages should show mainly tamil english hindi and if [possible odisaa lang it shoud be in all page okey from any page we can change that like okey so by this our app now multilingual all the text and voice should change according to the language selected 
+
+if i click any of the buttos resident , garbage ,authority the proper reg form right you even know what will be the required details that all should be enterted and remeber garbage collector the municipal authortiy will craete emoployee and give name and all the details right after created the passwoerd genrater defauilty it as garbage23 like that okey it put menas wit their name the garbage collecters can logg in , adrees and the door no will be main for resident with their ph no 
+
+okey first resident after they login it is resudent dashboard in this the profile icon should have as usual the big big apps like insta and other regular profile will have right that like needs to have in that they will see their name as u know with photo icon it shoudllbe door no okey they have options like down in signout in red and up sekect langauge , turn on dark mode rememeber we also doing that dsark mode option and white mode , it shoudl have for all toggle for all okey 
+thenthey can eddit their address that main and eddit phone number 
+
+near even profile there should be icon like cu=redit or currency like if they clcik seprate dashboard in this it should display their name door no adress  and their Beacon score 
+beacon score is nothing it is like cibil score in bank acc if we have no cibil score we cannot take loans that like if the resident dont dispose waste properly reported y the garvabage collector their cibil score gets minis if it goes under 50 for resident the available and not availabe button right if they clciik it should show you are low cibil score lie that 
+
+
+okey first status available and not available two buttons with nice h ovwe if they click available their profile icon in top glow with green if not available it should glow in red whilw clicking button also the voise msg should be givin in respected language 
+resident have 4 feature 
+GarCar Tracker it also sep dash like if they click this map should open in their dashboard keep as chennai in map the truck like icon object should move that is our garabage truck okey in map down it should message like your garabeg truck will reach your home in respected minits 5 or 10 and in map button like get direction it should redirect to their google map and thei can click get direction mensa that google map wil doo rigt that need to do 
+
+history : in this it should show like when they last pickup that all the stuffs add whatever you need in this if the grabage collector reported on yo menas als show msg 
+
+ overflow 
+
+in this as same the map should open okey  people should select the overflow type and selet the place in map it should form red transpernt circle as identication and mesg pop ike your report has been send tto the municipal the porblem will be issued shortly like that 
+then 
+
+connect !
+this is one of your main things 
+in this three things should have tips , chats , distribute
+in tips the list of garbage collectors will be shown the resident will click them and enter amount and send tip the money will be sended to the garbage colectors 
+via online 
+
+chats : it is like chatbox okey wher the only resident and garbage collector can chats as normal chat box but publicly one group as whatsup like that okey 
+
+distributr this is for resident to call the particualr gabage colecter and give their old cloths or new dress liet that thats its purposde so as list the garbage collector and list the purpose for get my old cloths , get my old toys , new cloths , extra foods likethat okey we selected and click menss the garbage collector will be notify and if they want and they can they will come and get 
+
+thats all connect 
+
+in down  
+
+feedback and emergeny in feedback the list of grabage collector ther select and rate them on star and add comment 
+and as usual for emergency what whta will habe do that this is same for both garbage collector and residenrt but feedback only for residebt 
+
+thats all for resident did i miss anything means say
+
+garbage collector 
+as usual afte the resitration the seprate dashboard should open in this as same the profile okey as same for resident all the respective details do that 
+
+for garbage collecter in that dasboard even i need a prograss bar like okey how much work competeed this is based on house that in not available 
+
+for them 3 freature dumps 
+alerts 
+collect !
+
+in dumps 
+the map should open in this map there should be icons if home if the garbage collecter click that up in that icon a trasprant /blur box open in that the house details i need the door number house hold name and in that box 3 buttons call 
+send sms , collected , report 
+if they click call the call will go for respective mobile nuber they enroll
+same for sms it should send message then collected if they collected they will clikc this after this click means their status wich is now availabkle will be changed to not available report click report and it lists why give your own stuffs if they reporst their that beacon credit that should be reduse 
+
+in aleaarts in this the resident who puts iverflow report right that need to be seen by here same map should open and reported area should be shown with whome reported and if click it ask get direction as you know if we click it will redirect to goodgle map  
+
+then connect as same the resident have right that will be connected in this in first tips they can view how much money the getted as tip and by whome 
+and that chat box as usual and what i say in distribute 
+a message like in my home there are lots of unfit dress having if you need come and collect 
+
+
+for municipal authorities an proper dashboard for admins like create in this first the map should open in that the many trucks should roame that reprasent they also tracking the trucks where it going and the second map the overflow report should be seen 
+
+in third how many tips gaing by whone to whone all th edetails and shoukd have add and remove garbage collecter this needs to add that garbage collectors list wehere ever it needs 
+
+feedbakc 
+wher people send feedbacks can bee seen 
+
+thats all broo 
+we going to use toggle modes right dark mode and bright mode in dark mode for the background in black i have the respective image so i will put that is black based  hd according too that make the css if in dark mode whole app backthorn thatg only and for bright modei have bg in green color a normal green according to that manage that 
+
+i need a best and smooth ui use trasnpriancy box that blurry glass finish block for reg and wherever it needs and manage that language changing and voice carfully 
+
+this is my project build me lovable i trust you buddy 
+
+is this okey buddy i miss anything ?

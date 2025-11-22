@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Background for light mode */
+body {
+  @apply bg-cover bg-no-repeat bg-center;
+  background-image: url(C:\Users\admin\Downloads\BinBeaconFlow\BinBeaconFlow\attached_assets\Scanned_20250522-1837_1757841563217.jpg);
+}
+
+/* Background for dark mode */
+.dark body {
+  background-image: url(C:\Users\admin\Downloads\BinBeaconFlow\BinBeaconFlow\attached_assets\bg_1757841544405.jpg);
+}
+
+
+
+:root {
+  --background: hsl(210, 40%, 96%);
+  --foreground: hsl(222, 84%, 5%);
+  --card: hsl(0, 0%, 100%);
+  --card-foreground: hsl(222, 84%, 5%);
+  --popover: hsl(0, 0%, 100%);
+  --popover-foreground: hsl(222, 84%, 5%);
+  --primary: hsl(158, 64%, 52%);
+  --primary-foreground: hsl(210, 40%, 98%);
+  --secondary: hsl(200, 80%, 45%);
+  --secondary-foreground: hsl(222, 47%, 11%);
+  --muted: hsl(210, 40%, 96%);
+  --muted-foreground: hsl(215, 16%, 47%);
+  --accent: hsl(43, 96%, 56%);
+  --accent-foreground: hsl(222, 47%, 11%);
+  --destructive: hsl(0, 85%, 60%);
+  --destructive-foreground: hsl(210, 40%, 98%);
+  --border: hsl(214, 32%, 91%);
+  --input: hsl(214, 32%, 91%);
+  --ring: hsl(158, 64%, 52%);
+  --chart-1: hsl(158, 64%, 52%);
+  --chart-2: hsl(200, 80%, 45%);
+  --chart-3: hsl(43, 96%, 56%);
+  --chart-4: hsl(147, 79%, 42%);
+  --chart-5: hsl(341, 75%, 51%);
+  --sidebar: hsl(180, 7%, 97%);
+  --sidebar-foreground: hsl(222, 84%, 5%);
+  --sidebar-primary: hsl(158, 64%, 52%);
+  --sidebar-primary-foreground: hsl(210, 40%, 98%);
+  --sidebar-accent: hsl(211, 51%, 93%);
+  --sidebar-accent-foreground: hsl(158, 64%, 52%);
+  --sidebar-border: hsl(205, 25%, 91%);
+  --sidebar-ring: hsl(158, 64%, 52%);
+  --font-sans: 'Inter', sans-serif;
+  --font-serif: Georgia, serif;
+  --font-mono: 'Fira Code', monospace;
+  --radius: 0.75rem;
+  
+  /* Glassmorphism Variables */
+  --glass-bg: hsla(0, 0%, 100%, 0.15);
+  --glass-border: hsla(0, 0%, 100%, 0.2);
+  --glass-shadow: hsla(0, 0%, 0%, 0.1);
+  
+  /* Background Gradients */
+  --bg-light: linear-gradient(135deg, hsl(158, 64%, 52%) 0%, hsl(200, 80%, 45%) 100%);
+  --bg-dark: linear-gradient(135deg, hsl(222, 84%, 5%) 0%, hsl(215, 28%, 17%) 100%);
+}
+
+.dark {
+  --background: hsl(222, 84%, 5%);
+  --foreground: hsl(210, 40%, 98%);
+  --card: hsl(222, 84%, 5%);
+  --card-foreground: hsl(210, 40%, 98%);
+  --popover: hsl(222, 84%, 5%);
+  --popover-foreground: hsl(210, 40%, 98%);
+  --primary: hsl(158, 64%, 52%);
+  --primary-foreground: hsl(222, 84%, 5%);
+  --secondary: hsl(217, 33%, 18%);
+  --secondary-foreground: hsl(210, 40%, 98%);
+  --muted: hsl(217, 33%, 18%);
+  --muted-foreground: hsl(215, 20%, 65%);
+  --accent: hsl(43, 96%, 56%);
+  --accent-foreground: hsl(210, 40%, 98%);
+  --destructive: hsl(0, 63%, 31%);
+  --destructive-foreground: hsl(210, 40%, 98%);
+  --border: hsl(217, 33%, 18%);
+  --input: hsl(217, 33%, 18%);
+  --ring: hsl(158, 64%, 52%);
+  --chart-1: hsl(158, 64%, 52%);
+  --chart-2: hsl(200, 80%, 45%);
+  --chart-3: hsl(43, 96%, 56%);
+  --chart-4: hsl(147, 79%, 42%);
+  --chart-5: hsl(341, 75%, 51%);
+  --sidebar: hsl(222, 84%, 5%);
+  --sidebar-foreground: hsl(210, 40%, 98%);
+  --sidebar-primary: hsl(158, 64%, 52%);
+  --sidebar-primary-foreground: hsl(210, 40%, 98%);
+  --sidebar-accent: hsl(205, 70%, 8%);
+  --sidebar-accent-foreground: hsl(158, 64%, 52%);
+  --sidebar-border: hsl(205, 16%, 26%);
+  --sidebar-ring: hsl(158, 64%, 52%);
+  
+  /* Dark Mode Glassmorphism */
+  --glass-bg: hsla(0, 0%, 0%, 0.3);
+  --glass-border: hsla(255, 255%, 255%, 0.1);
+  --glass-shadow: hsla(0, 0%, 0%, 0.3);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+    background: var(--bg-light);
+    transition: all 0.5s ease;
+  }
+
+  .dark body {
+    background: var(--bg-dark);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .glassmorphism {
+    background: var(--glass-bg);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid var(--glass-border);
+    box-shadow: 0 8px 32px var(--glass-shadow);
+  }
+
+  .glass-card {
+    @apply glassmorphism rounded-2xl;
+  }
+
+  .status-available {
+    box-shadow: 0 0 20px hsl(var(--primary) / 0.5);
+    animation: glow-green 2s ease-in-out infinite alternate;
+  }
+
+  .status-not-available {
+    box-shadow: 0 0 20px hsl(var(--destructive) / 0.5);
+    animation: glow-red 2s ease-in-out infinite alternate;
+  }
+
+  .truck-marker {
+    animation: truck-move 10s linear infinite;
+  }
+
+  .overflow-circle {
+    background: hsla(0, 85%, 60%, 0.3);
+    border: 2px solid hsla(0, 85%, 60%, 0.6);
+    border-radius: 50%;
+    animation: pulse-overflow 2s infinite;
+  }
+
+  .beacon-score-excellent {
+    @apply text-green-500;
+  }
+
+  .beacon-score-good {
+    @apply text-yellow-500;
+  }
+
+  .beacon-score-poor {
+    @apply text-red-500;
+  }
+
+  .chat-bubble-sent {
+    @apply bg-primary text-primary-foreground ml-auto;
+  }
+
+  .chat-bubble-received {
+    @apply bg-muted text-muted-foreground mr-auto;
+  }
+
+  .progress-bar {
+    background: linear-gradient(
+      90deg, 
+      hsl(var(--primary)) 0%, 
+      hsl(var(--primary)) var(--progress, 0%), 
+      hsl(var(--muted)) var(--progress, 0%), 
+      hsl(var(--muted)) 100%
+    );
+  }
+}
+
+@layer utilities {
+  .animate-truck-move {
+    animation: truck-move 8s ease-in-out infinite;
+  }
+
+  .animate-glow-green {
+    animation: glow-green 2s ease-in-out infinite alternate;
+  }
+
+  .animate-glow-red {
+    animation: glow-red 2s ease-in-out infinite alternate;
+  }
+
+  .animate-pulse-overflow {
+    animation: pulse-overflow 2s infinite;
+  }
+
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@keyframes glow-green {
+  from {
+    box-shadow: 0 0 20px hsl(var(--primary) / 0.3);
+  }
+  to {
+    box-shadow: 0 0 30px hsl(var(--primary) / 0.7), 0 0 40px hsl(var(--primary) / 0.4);
+  }
+}
+
+@keyframes glow-red {
+  from {
+    box-shadow: 0 0 20px hsl(var(--destructive) / 0.3);
+  }
+  to {
+    box-shadow: 0 0 30px hsl(var(--destructive) / 0.7), 0 0 40px hsl(var(--destructive) / 0.4);
+  }
+}
+
+@keyframes truck-move {
+  0%, 100% { transform: translate(0, 0) rotate(0deg); }
+  25% { transform: translate(100px, 50px) rotate(15deg); }
+  50% { transform: translate(200px, -30px) rotate(-10deg); }
+  75% { transform: translate(150px, 80px) rotate(5deg); }
+}
+
+@keyframes pulse-overflow {
+  0%, 100% { 
+    opacity: 0.6; 
+    transform: scale(1);
+  }
+  50% { 
+    opacity: 1; 
+    transform: scale(1.1);
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--glass-bg);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--glass-border);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--primary) / 0.5);
+}
+
+/* Map specific styles */
+.leaflet-container {
+  border-radius: 1rem;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.leaflet-popup-content-wrapper {
+  @apply glassmorphism;
+  border-radius: 0.5rem;
+}
+
+.leaflet-popup-tip {
+  background: var(--glass-bg);
+}
+
+/* Star Rating */
+.star-rating {
+  color: hsl(var(--accent));
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.star-empty {
+  color: hsl(var(--muted-foreground));
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.star-rating:hover,
+.star-empty:hover {
+  transform: scale(1.2);
+}
+
+/* Voice Animation */
+.voice-active {
+  animation: voice-pulse 1s ease-in-out infinite;
+}
+
+@keyframes voice-pulse {
+  0%, 100% { opacity: 0.7; }
+  50% { opacity: 1; }
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .glass-card {
+    @apply p-4;
+  }
+  
+  .truck-marker {
+    animation: truck-move-mobile 6s linear infinite;
+  }
+}
+
+@keyframes truck-move-mobile {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(50px, 25px); }
+}
